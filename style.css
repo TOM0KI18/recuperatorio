@@ -1,0 +1,161 @@
+html,
+body {
+  background-color: #f0f0ee;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  position: relative; 
+}
+
+h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 12px;
+  padding: 40px 48px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 28px;
+}
+
+#form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#nombre,
+#telefono,
+#buscador {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background-color: #fff;
+}
+
+#nombre::placeholder,
+#telefono::placeholder,
+#buscador::placeholder {
+  color: #9a9a9a;
+}
+
+#nombre:focus,
+#telefono:focus,
+#buscador:focus {
+  border-color: #2f6b5e;
+}
+
+#btn-agregar {
+  align-self: flex-start;
+  background-color: #2f6b5e;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#btn-agregar:hover {
+  background-color: #245449;
+}
+
+#buscador {
+  margin-top: 24px;
+}
+
+#lista-contactos {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#lista-contactos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #333;
+}
+
+#lista-contactos li .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#lista-contactos li .info .nombre {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+#lista-contactos li .info .telefono {
+  font-size: 14px;
+  color: #777;
+}
+
+#lista-contactos li button {
+  background-color: transparent;
+  color: #c0392b;
+  border: 1px solid #c0392b;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#lista-contactos li button:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+#mensaje-vacio {
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 16px;
+  margin: 48px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 24px 0 16px;
+}
+
+#contador {
+  font-weight: 700;
+  font-size: 16px;
+  color: #555;
+}
+
+.oculto {
+  display: none !important;
+}
