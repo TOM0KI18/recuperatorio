@@ -1,8 +1,3 @@
-/* ============================================================
-   COMMIT 5: agregar contacto funcional
-   ============================================================ */
-
-// ===== Estructura de datos =====
 const contactos = [];
 
 // ===== Referencias al DOM =====
@@ -36,7 +31,6 @@ function agregarContacto(e) {
   renderizar();
 }
 
-// ===== Render básico (solo lista, sin filtro ni contador) =====
 function renderizar() {
   listaContactos.innerHTML = "";
 
@@ -68,9 +62,15 @@ function renderizar() {
   });
 }
 
-// ===== Event listener del botón agregar =====
 form.addEventListener("submit", agregarContacto);
 
-// ===== Render inicial =====
 renderizar();
 
+// ===== Eliminar contacto =====
+function eliminarContacto(id) {
+  const indice = contactos.findIndex((c) => c.id === id);
+  if (indice !== -1) {
+    contactos.splice(indice, 1);
+  }
+  renderizar();
+}
