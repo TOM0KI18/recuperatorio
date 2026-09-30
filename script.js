@@ -66,7 +66,6 @@ form.addEventListener("submit", agregarContacto);
 
 renderizar();
 
-// ===== Eliminar contacto =====
 function eliminarContacto(id) {
   const indice = contactos.findIndex((c) => c.id === id);
   if (indice !== -1) {
@@ -74,3 +73,7 @@ function eliminarContacto(id) {
   }
   renderizar();
 }
+
+// ===== Referencia al contador =====
+const contador = document.getElementById("contador");
+
